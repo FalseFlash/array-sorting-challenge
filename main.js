@@ -1,5 +1,8 @@
 
 class Endorsements {
+    /**
+     * @constructor
+     */
     constructor(info) {
         if (typeof info !== 'object')
             return TypeError('Param 1 must be an object!');
@@ -11,6 +14,10 @@ class Endorsements {
         this.sortedArray = [];
     }
 
+    /**
+     * Sort the users in the array by skills.
+     * @returns array
+     */
     sort_users_by_skill() {
         if (this.userArray.length <= 0)
             return Error('There is no data in the array.');
@@ -38,6 +45,11 @@ class Endorsements {
         return this.sortedArray;
     }
 
+    /**
+     * Search for the requested skill in the sorted array.
+     * @param skill
+     * @returns {{found: boolean, index: number}}
+     */
     skill_exists(skill) {
         for (let i = 0; i < this.sortedArray.length; i++) {
             if (this.sortedArray[i].skill == skill)
