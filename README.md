@@ -14,7 +14,9 @@ let test = new Endorsements([
 ]);
 
 
-test.sort_users_by_skill();
+const sorted = test.sort_users_by_skill();
+
+console.log(sorted);
 ```
 
 ### The output
