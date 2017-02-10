@@ -27,3 +27,5 @@ test.sort_users_by_skill();
   { skill: 'html', user: [ 'Sue' ], count: 1 } 
 ]
 ```
+
+#### Time to complete: 1 hour 28 minutes
