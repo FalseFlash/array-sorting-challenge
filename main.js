@@ -59,17 +59,3 @@ class Endorsements {
         return {found: false, index: -1};
     }
 }
-
-let test = new Endorsements([
-        { skill: 'css', user: 'Bill' },
-        { skill: 'javascript', user: 'Chad' },
-        { skill: 'javascript', user: 'Bill' },
-        { skill: 'css', user: 'Sue' },
-        { skill: 'javascript', user: 'Sue' },
-        { skill: 'html', user: 'Sue' }
-]);
-
-
-const sorted = test.sort_users_by_skill();
-
-console.log(sorted);
